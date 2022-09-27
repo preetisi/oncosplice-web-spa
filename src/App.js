@@ -1,25 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import { Nav } from "rsuite/";
+import "rsuite/dist/rsuite.min.css";
+import Header from "/Users/sin9gp/oncosplice-web-spa/src/components/Header"
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+export default function App() {
+    return (
+        <center>
+            <div>
+                
+                <div style={{ marginTop: 20 }}>
+                <Header />
+                    
+                </div>
+            </div>
+        </center>
+    );
 }
-
-export default App;
