@@ -1,4 +1,4 @@
-import { Nav, Dropdown} from "rsuite/";
+import { Nav, Dropdown,Navbar} from "rsuite/";
 import "rsuite/dist/rsuite.min.css";
 import React, { Fragment } from "react"
 
@@ -10,60 +10,37 @@ const onSelectHandle = (e) => {
 
 
 const Header = () => (
- 
     <Fragment>
-         <Dropdown
-                title="Cancer Type"
-                onSelect={onSelectHandle}
-                activeKey="brca"
-                placement="bottomStart"
-                trigger = "hover"
-            >
-                <Dropdown.Item eventKey="tcga">
-                Low-grade Giloma(TCGA)
-                </Dropdown.Item>
-                <Dropdown.Item eventKey="brca">
-                Breast cancer(BRCA)
-                </Dropdown.Item>
-                <Dropdown.Item eventKey="lgg">
-                LGG
-                </Dropdown.Item>
-                <Dropdown.Item eventKey="luad">
-                LUAD
-                </Dropdown.Item>
-                <Dropdown.Item eventKey="aml_leucegene">
-                AML_Leucegene
-                </Dropdown.Item>
-                
-            </Dropdown>
-        <Nav>
-               
-        <Nav.Menu title="Cancer Type" eventKey="LGG">
+    
+        <Nav>     
+        <Nav.Menu title="Cancer Type" eventKey="LGG" trigger = "hover">
             <Nav.Item>Low-grade Giloma(TCGA)</Nav.Item>
             <Nav.Item>Breast cancer(BRCA)</Nav.Item>
             <Nav.Item>LGG</Nav.Item>
             <Nav.Item>LUAD</Nav.Item>
             <Nav.Item>AML_Leucegene</Nav.Item>
         </Nav.Menu>
-        <Nav.Menu title="Sample Filter">
+        <Nav.Menu title="Sample Filter" trigger = "hover">
                 <Nav.Item>IDH 1p19Q Subtype</Nav.Item>
                 <Nav.Item>IDH 1p19Q Subtype-2</Nav.Item>
         </Nav.Menu>
-        <Nav.Menu title="Event">
+        <Nav.Menu title="Event" trigger = "hover">
             <Nav.Item>Oncosplice signature filter</Nav.Item>
             <Nav.Item>Problem of the Day</Nav.Item>
         </Nav.Menu>
-        <Nav.Menu title="Cancer Signature Selection">
+        <Nav.Menu title="Cancer Signature Selection" trigger = "hover">
             <Nav.Item>LGG</Nav.Item>
             <Nav.Item>LGG-1</Nav.Item>
         </Nav.Menu>
-        <Nav.Menu title="Cancer Signature Filter">
+        <Nav.Menu title="Cancer Signature Filter" trigger = "hover">
             <Nav.Item>R1-V1</Nav.Item>
             <Nav.Item>R1-V2</Nav.Item>
         </Nav.Menu>
+        <Nav.Menu title="Genes or Coordinates" trigger = "hover">
+            
+        </Nav.Menu>
     </Nav>
     </Fragment>
-    
 
 )
 

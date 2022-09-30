@@ -1,6 +1,7 @@
 import { Nav } from "rsuite/";
 import "rsuite/dist/rsuite.min.css";
 import Header from "/Users/sin9gp/oncosplice-web-spa/src/components/Header"
+import Demo from "./components/Header/TopNavigationBar"
 
 
 export default function App() {
@@ -9,7 +10,9 @@ export default function App() {
             <div>
                 
                 <div style={{ marginTop: 20 }}>
+                <Demo/>
                 <Header />
+                
                
                     
                 </div>
